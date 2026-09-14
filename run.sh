@@ -6,7 +6,7 @@ script_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 if (($# < 1 || $# > 2)); then
     echo "Verwendung: run <Tag> [-p]" >&2
     echo "  run 3    startet Tag 3 mit Testdaten" >&2
-    echo "  run 3 -p  startet Tag 3 mit Produktivdaten" >&2
+    echo "  run 8 -p  startet Tag 8 mit Produktivdaten" >&2
     exit 1
 fi
 

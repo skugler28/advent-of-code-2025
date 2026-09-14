@@ -76,6 +76,10 @@ function solvePart2(lines) {
 module.exports = solvePart2;
 EOF
 
+git -C "$script_dir" add -- "$folder_name"
+git -C "$script_dir" commit -m "Add AoC day $padded_day scaffold" -- "$folder_name"
+
 echo "AoC-Tag $padded_day wurde in '$folder_name' angelegt."
+echo "Commit wurde erstellt. Push bitte separat ausfuehren."
 echo "Test: node \"$folder_name/index.js\" -test"
 echo "Echt: node \"$folder_name/index.js\""
